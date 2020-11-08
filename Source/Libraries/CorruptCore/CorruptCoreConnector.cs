@@ -268,7 +268,9 @@ namespace RTCV.CorruptCore
                     case Remote.RemoveExcessInfiniteStepUnits:
                         SyncObjectSingleton.FormExecute(() => StepActions.RemoveExcessInfiniteStepUnits());
                         break;
-
+                    case Scripts.LoadScript:
+                        ScriptEngine.LoadScript((string)advancedMessage.objectValue);
+                        break;
                     default:
                         new object();
                         break;

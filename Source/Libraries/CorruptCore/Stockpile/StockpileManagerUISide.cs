@@ -67,6 +67,8 @@ namespace RTCV.CorruptCore
 
             if (loadBeforeOperation)
             {
+                //Load script
+                LocalNetCoreRouter.Route(NetCore.Endpoints.CorruptCore, NetCore.Commands.Scripts.LoadScript, sk?.Note, true);
                 if (!LoadState(sk))
                 {
                     return isCorruptionApplied;
@@ -76,6 +78,8 @@ namespace RTCV.CorruptCore
             {
                 bool mergeWithCurrent = !clearUnitsBeforeApply;
 
+                //Load script
+                LocalNetCoreRouter.Route(NetCore.Endpoints.CorruptCore, NetCore.Commands.Scripts.LoadScript, sk?.Note, true);
                 //APPLYBLASTLAYER
                 //Param 0 is BlastLayer
                 //Param 1 is storeUncorruptBackup

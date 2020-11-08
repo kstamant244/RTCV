@@ -1,5 +1,3 @@
-namespace RTCV.UI
-{
     using System;
     using System.Collections.Generic;
     using System.Data;
@@ -12,6 +10,8 @@ namespace RTCV.UI
     using RTCV.NetCore;
     using RTCV.Common;
     using RTCV.UI.Modular;
+namespace RTCV.UI
+{
 
     public partial class GlitchHarvesterBlastForm : ComponentForm, IBlockable
     {

@@ -15,6 +15,7 @@
     <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\NetCore\NetCore.csproj" />
     <ProjectReference Include="..\PluginHost\PluginHost.csproj" />
+    <ProjectReference Include="..\ScriptCore\ScriptCore.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Ceras">

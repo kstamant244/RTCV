@@ -122,4 +122,10 @@ namespace RTCV.NetCore.Commands
         public const string GetScreenshot = nameof(Emulator) + "_" + nameof(GetScreenshot);
         public const string InFocus = nameof(Emulator) + "_" + nameof(InFocus);
     }
+
+    public static class Scripts
+    {
+        public const string LoadScript = nameof(Scripts) + "_" + nameof(LoadScript);
+        public const string ResetScripts = nameof(Scripts) + "_" + nameof(ResetScripts);
+    }
 }

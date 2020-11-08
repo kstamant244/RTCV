@@ -433,6 +433,7 @@ namespace RTCV.CorruptCore
             lock (executeLock)
             {
                 StepStart?.Invoke(null, new EventArgs());
+                ScriptEngine.Execute("PreExecute");
                 if (isRunning)
                 {
                     //Queue everything up
@@ -470,6 +471,7 @@ namespace RTCV.CorruptCore
                     }
                 }
                 StepEnd?.Invoke(null, new EventArgs());
+                ScriptEngine.Execute("PostExecute");
             }
         }
     }

@@ -38,6 +38,7 @@ namespace RTCV.CorruptCore
         public string GameName { get; set; }
         public string SyncSettings { get; set; }
         public string Note { get; set; }
+        public string Script { get; set; }
 
         public string Key { get; set; }
         public string ParentKey { get; set; }
